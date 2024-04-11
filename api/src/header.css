@@ -1,0 +1,29 @@
+.header {
+    position: relative;
+    top: 100px;
+  }
+  
+  .movingTextContainer {
+    background-color: greenyellow;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+  .movingText {
+    display: inline-block;
+    white-space: nowrap;
+    animation: moveText 15s linear infinite;
+  }
+  
+  @keyframes moveText {
+    from {
+      transform: translateX(-150%);
+    }
+    to {
+      transform: translateX(150%);
+    }
+  }
